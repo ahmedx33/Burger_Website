@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Burger-App</title>
+</head>
+
+<body class="bg-main-black scroll-smooth">
+    <div class="container flex flex-col mx-auto items-center h-screen bg-main-black relative">
+        <nav
+            class="flex fixed top-0 border-b border-main-gray bg-main-black w-full justify-between items-center  py-5 mx-auto px-10 lg:px-28 xl:px-32 z-50 ">
+            <div class="logo  text-main-white uppercase text-3xl ">Bur<span class="text-main-yellow">ger</span></div>
+            <ul class="items-center space-x-7 no-underline list-none text-main-white hidden md:flex">
+                <li><a href="#home" class="text-main-yellow">Home</a></li>
+                <li><a href="#about-us" class="hover:text-main-yellow transition-all duration-100">About Us</a></li>
+                <li><a href="#menu" class="hover:text-main-yellow transition-all duration-100">Menu</a></li>
+                <li><a href="#review" class="hover:text-main-yellow transition-all duration-100">Review</a></li>
+                <li><a href="#contact" class="hover:text-main-yellow transition-all duration-100">Contact</a></li>
+                <li><i
+                        class="fa-regular fa-moon text-2xl cursor-pointer hover:text-main-yellow transition-all duration-100"></i>
+                </li>
+            </ul>
+            <div class="block md:hidden text-main-white space-x-5">
+                <i
+                    class="fa-regular fa-moon text-3xl cursor-pointer hover:text-main-yellow transition-all duration-100"></i>
+                <i
+                    class="fa-solid fa-bars text-3xl cursor-pointer hover:text-main-yellow transition-all duration-100"></i>
+            </div>
+        </nav>
+        <section id="home"
+            class="flex flex-col w-full items-center px-9 pt-32  md:flex-row md:items-start md:space-x-5 md:pl-10 md:pr-10 py-10 xl:space-x-24 xl:pl-32 xl:pr-32 ">
+            <div class="w-full md:w-96">
+                <img src="/images/home-image.png" alt=""
+                    class="object-cover bg-no-repeat bg-cover select-none md:flex-1 w-full animate-up-down">
+            </div>
+            <div
+                class="w-full md:w-1/2 pt-10 md:pt-0 space-y-10 md:space-y-6 flex flex-col items-center md:items-start">
+                <h1 class="text-main-white font-bold uppercase text-6xl text-center md:text-start">Happy Tummy With
+                    Tasty <span class="text-main-yellow md:text-main-white">Burgers.</span></h1>
+                <div class="w-40 h-1 bg-main-yellow "></div>
+                <p class="text-main-white max-w-full text-center md:text-start md:max-w-2xl">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Modi,
+                    laboriosam illum reprehenderit placeat
+                    minus, harum dolorem perferendis porro eius omnis incidunt eaque ipsam provident velit. Blanditiis
+                    in voluptatem mollitia quas!</p>
+                <div class="flex items-center md:items-start text-main-white space-x-10  md:space-x-16 pt-14">
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-utensils text-5xl text-main-yellow"></i>
+                        <span class=" text-xl md:text-2xl">Delicious</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-droplet text-5xl text-main-yellow"></i>
+                        <span class="text-xl md:text-2xl">Fresh</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-brands fa-envira text-5xl text-main-yellow"></i>
+                        <span class="text-xl md:text-2xl">Organic</span>
+                    </div>
+                </div>
+                <div class="pt-7">
+                    <button class="bg-main-yellow py-3 px-9 rounded-md text-main-black">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section id="category"
+            class="flex flex-col  px-7 space-y-5 md:flex-row md:space-y-0 md:space-x-5 py-20 md:px-5 lg:px-32 mx-auto w-full">
+            <div class="flex w-full md:w-1/3  bg-main-yellow rounded-lg py-3 overflow-hidden">
+                <div class="basis-1/2 relative">
+                    <img src="/images/burger-1.png" alt=""
+                        class="bg-cover object-cover select-none absolute -left-4 w-28 -bottom-4">
+                </div>
+                <div class="flex flex-col w-full p-4">
+                    <h1 class="text-main-white font-bold text-3xl uppercase">Food</h1>
+                    <a href="" class="text-lg font-bold text-main-black">Buy online</a>
+                </div>
+            </div>
+            <div class="flex w-full md:w-1/3  bg-snack-color rounded-lg py-3 overflow-hidden">
+                <div class="basis-1/2 relative">
+                    <img src="/images/snack-1.png" alt=""
+                        class="bg-cover object-cover select-none absolute -left-4 w-28 -bottom-4">
+                </div>
+                <div class="flex flex-col w-full p-4">
+                    <h1 class="text-main-white font-bold text-3xl uppercase">Snack</h1>
+                    <a href="" class="text-lg font-bold text-main-yellow">Buy online</a>
+                </div>
+            </div>
+            <div class="flex w-full md:w-1/3  bg-beverage-color rounded-lg py-3 overflow-hidden">
+                <div class="basis-1/2 relative">
+                    <img src="/images/beverage-2.png" alt=""
+                        class="bg-cover object-cover  select-none absolute -left-4 w-28 -bottom-4">
+                </div>
+                <div class="flex flex-col w-full p-4">
+                    <h1 class="text-main-white font-bold text-3xl uppercase">Berevage</h1>
+                    <a href="" class="text-lg font-bold text-main-yellow">Buy online</a>
+                </div>
+            </div>
+        </section>
+        <section id="promo">
+            <div class="container flex flex-col px-7 gap-y-10 md:px-5 lg:px-32 md:gap-x-10 md:flex-row">
+                <div
+                    class="flex flex-col bg-main-gray py-6 px-4 rounded-lg items-center md:items-start md:flex-row-reverse">
+                    <div class="basis-1/2 select-none">
+                        <img src="/images/promo-1.png" alt="" class="w-40">
+                    </div>
+                    <div class="space-y-5">
+                        <span class="text-main-yellow">Payday promo</span>
+                        <h1 class="text-3xl font-bold text-main-white uppercase">get a 10% discounton payday week</h1>
+                        <p class="text-main-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="" class="text-main-yellow font-bold">Buy Online</a>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col bg-main-gray py-6 px-4 rounded-lg items-center md:items-start md:flex-row-reverse">
+                    <div class="basis-1/2 select-none">
+                        <img src="/images/promo-2.png" alt="" class="w-40">
+                    </div>
+                    <div class="space-y-5">
+                        <span class="text-main-yellow">Payday promo</span>
+                        <h1 class="text-3xl font-bold text-main-white uppercase">get a 10% discounton payday week</h1>
+                        <p class="text-main-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="" class="text-main-yellow font-bold">Buy Online</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="container flex flex-col gap-x-10 pt-10 md:flex-row px-7 md:px-5 lg:px-32">
+                <div class="overflow-hidden rounded-lg ">
+                    <img src="/images/about.jpg" alt="" class="h-full w-full bg-cover object-cover select-none">
+                </div>
+                <div>
+                    <div class="space-y-5 md:pr-0 lg:pr-24">
+                        <h1 class="font-bold text-3xl text-main-white">FIND FOOD AND DRINKS,
+                            ALL-IN-ONE PLACE FOR
+                            YOUR BEST TASTE.</h1>
+                        <div class="w-40 h-1 bg-main-yellow "></div>
+                        <p class="text-main-white">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aenean commodo ligula eget dolor. Aenean
+                            massa. Cum sociis natoque penatibus et magnis dis
+                            parturient montes.</p>
+
+                    </div>
+                    <div class="flex gap-10 md:gap-28 pt-7">
+                        <div class="flex flex-col items-center text-main-white">
+                            <div><a href=""><i class="fa-solid fa-check text-main-yellow"></i> Best Price</a></div>
+                            <div><a href=""><i class="fa-solid fa-check text-main-yellow"></i> Best Service</a></div>
+                        </div>
+                        <div class="flex flex-col items-center text-main-white">
+                            <div><a href=""><i class="fa-solid fa-check text-main-yellow"></i> Fresh Ingredient</a>
+                            </div>
+                            <div><a href=""><i class="fa-solid fa-check text-main-yellow"></i> Health Protocol</a></div>
+                        </div>
+                    </div>
+                    <div class="pt-5">
+                        <button class="bg-main-yellow py-3 px-9 rounded-md text-main-black">About Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="conatiner flex flex-col items-center pt-20">
+                <div class="flex flex-col items-center space-y-6 px-10">
+                    <h1 class="font-bold text-3xl text-main-white">OUR BEST MENU</h1>
+                    <div class="w-40 h-1 bg-main-yellow text-main-white"></div>
+                    <p class="text-main-white max-w-lg text-center"> Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+                <div class="flex gap-x-5 gap-y-5 auto-cols-1fr flex-wrap flex-1 pt-10 px-10">
+                    <div
+                        class="w-1/4 text-main-black flex-1 bg-main-yellow px-10 py-3 flex items-center justify-center cursor-pointer rounded-lg hover:bg-main-yellow hover:text-main-black transition-all duration-150">
+                        All</div>
+                    <div
+                        class="w-1/4 text-main-white flex-1 bg-main-gray px-10 py-3 flex items-center justify-center cursor-pointer rounded-lg hover:bg-main-yellow hover:text-main-black transition-all duration-150">
+                        Food</div>
+                    <div
+                        class="w-1/4 text-main-white flex-1 bg-main-gray px-10 py-3 flex items-center justify-center cursor-pointer rounded-lg hover:bg-main-yellow hover:text-main-black transition-all duration-150">
+                        Snack</div>
+                    <div
+                        class="w-1/4 text-main-white flex-1 bg-main-gray px-10 py-3 flex items-center justify-center cursor-pointer rounded-lg hover:bg-main-yellow hover:text-main-black transition-all duration-150 ">
+                        Beverage</div>
+                </div>
+
+                <div
+                    class="containe grid grid-cols-1 px-10 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 grid-rows-4 gap-x-10 gap-y-10 pt-10 lg:px-32 xl:px-32">
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/burger-1.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">REGULAR BEEF BURGER</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/burger-2.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">REGULAR BEEF BURGER</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/burger-3.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">REGULAR BEEF BURGER</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/burger-4.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">REGULAR BEEF BURGER</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/burger-5.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">REGULAR BEEF BURGER</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/burger-6.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">REGULAR BEEF BURGER</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <!--Start Snacks area -->
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/snack-1.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">FRENCH FRIES</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/snack-2.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">FRENCH FRIES</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/snack-3.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">FRENCH FRIES</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/snack-4.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">FRENCH FRIES</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/snack-5.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">FRENCH FRIES</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/snack-6.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">FRENCH FRIES</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <!-- End snack area -->
+
+                    <!-- Start berevage -->
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/beverage-1.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">SWEET SMOOTHIE</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/beverage-2.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">SWEET SMOOTHIE</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/beverage-3.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">SWEET SMOOTHIE</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/beverage-4.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">SWEET SMOOTHIE</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex  items-center h-52 justify-center bg-main-gray py-10 rounded-3xl hover:bg-main-yellow transition-all duration-150 select-none">
+                            <img src="/images/beverage-5.png" alt="" class="w-32">
+                        </div>
+                        <div class="space-y-2">
+                            <h1 class="font-bold tetx-3xl text-main-white pt-5">SWEET SMOOTHIE</h1>
+                            <p class="text-main-white max-w-md pr-10 pb-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.</p>
+                            <a href="" class="text-main-yellow">$42.00</a>
+                        </div>
+                    </div>
+                    <!-- End berevage -->
+                </div>
+            </div>
+        </section>
+        <section id="review" class="bg-main-gray w-full mt-10 pb-10 ">
+            <div class="conatiner flex flex-col items-center pt-20">
+                <div class="flex flex-col items-center space-y-6 px-10">
+                    <h1 class="font-bold text-3xl text-center text-main-white">CUSTOMER REVIEW</h1>
+                    <div class="w-40 h-1 bg-main-yellow text-main-white"></div>
+                    <p class="text-main-white max-w-lg text-center"> Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </div>
+            </div>
+            <div class="flex items-center flex-col flex-wrap px-10 pt-10 justify-center gap-10 w-full md:flex-row ">
+
+                <div class="flex flex-col w-fit md:w-80 p-5 rounded-lg bg-main-black relative">
+                    <p class="text-main-white pb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore.</p>
+                    <div class="flex items-center">
+                        <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-main-white">
+                            <img src="/images/review-1.jpg" alt="" class="bg-cover object-cover bg-no-repeat">
+                        </div>
+                        <div class="text-main-white pl-3">
+                            <h1 class="font-bold">FARID ELSAYED</h1>
+                            <p>Flutter dev</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-main-yellow text-4xl"></i>
+                </div>
+
+                <div class="flex flex-col w-fit md:w-80  p-5 rounded-lg bg-main-black relative">
+                    <p class="text-main-white pb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore.</p>
+                    <div class="flex items-center">
+                        <div
+                            class="w-14 h-14 rounded-full overflow-hidden border-2 flex items-center justify-center border-main-white">
+                            <img src="/images/review-2.jpg" alt="" class="bg-cover object-cover w-24 h-24">
+                        </div>
+                        <div class="text-main-white pl-3">
+                            <h1 class="font-bold">AHMED HANY</h1>
+                            <p>Front End dev</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-main-yellow text-4xl"></i>
+
+                </div>
+
+                <div class="flex flex-col w-fit md:w-80  p-5 rounded-lg bg-main-black relative">
+                    <p class="text-main-white pb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore.</p>
+                    <div class="flex items-center">
+                        <div
+                            class="w-14 h-14 rounded-full overflow-hidden border-2 flex items-center justify-center border-main-white">
+                            <img src="/images/review-3.jpg" alt="" class="bg-cover object-cover w-24 h-24">
+                        </div>
+                        <div class="text-main-white pl-3">
+                            <h1 class="font-bold">MAZEN KAKE</h1>
+                            <p>.Net dev</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-main-yellow text-4xl"></i>
+
+                </div>
+
+                <div class="flex flex-col w-fit md:w-80  p-5 rounded-lg bg-main-black relative">
+                    <p class="text-main-white pb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore.</p>
+                    <div class="flex items-center">
+                        <div
+                            class="w-14 h-14 rounded-full overflow-hidden border-2 flex items-center justify-center border-main-white">
+                            <img src="/images/review-1.jpg" alt="" class="bg-cover object-cover w-24 h-24">
+                        </div>
+                        <div class="text-main-white pl-3">
+                            <h1 class="font-bold">MARK JACKBURG</h1>
+                            <p>React dev</p>
+                        </div>
+                        <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-main-yellow text-4xl"></i>
+
+                    </div>
+                    <i class="fa-solid fa-quote-right absolute bottom-4 right-4 text-main-yellow text-4xl"></i>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact"
+            class="flex flex-col md:flex-row space-y-5 md:justify-between items-center w-full bg-main-yellow py-20 px-28 md:px-32">
+            <div class="pr-10">
+                <h1 class="font-bold text-main-black text-3xl text-center">GET EXCLUSIVE UPDATE</h1>
+                <p class="text-main-white text-center">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+            </div>
+            <div class="space-y-5">
+                <input type="email" name="" id="" class="outline-none border-none indent-2 py-2 px-2 rounded-lg w-72"
+                    placeholder="Email address ">
+                <button class="bg-main-black py-2 px-8 rounded-lg text-center text-main-white w-72 md:w-40"><i
+                        class="fa-solid fa-paper-plane text-main-white"></i> Subscribe</button>
+            </div>
+        </section>
+        <section id="footer" class="w-full pt-32 pb-10 px-10 md:px-10 lg:px-32">
+            <div class="flex flex-col justify-between items-center md:flex-row gap-y-5">
+                <div class="flex flex-col md:flex-row w-full md:w-1/2">
+                    <div>
+                        <h1 class="font-bold text-3xl text-main-white">Bur<span class="text-main-yellow">ger</span></h1>
+                        <p class="max-w-xs text-main-white pb-5">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Corporis ea cum rerum consectetur delectus eius pariatur dolores porro?</p>
+                    </div>
+                    <div>
+                        <h1 class="text-main-white font-bold text-xl mb-3">SUPPORT</h1>
+                        <ul class="text-main-white space-y-4">
+                            <li class="hover:text-main-yellow transition-all duration-150"><a href="">FAQ's</a></li>
+                            <li class="hover:text-main-yellow transition-all duration-150"><a href="">Privacy Policy</a>
+                            </li>
+                            <li class="hover:text-main-yellow transition-all duration-150"><a href="">Terms &
+                                    Conditions</a></li>
+                            <li class="hover:text-main-yellow transition-all duration-150"><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 ">
+                    <div class="flex gap-10 flex-col md:flex-row">
+                        <div class="space-y-5">
+                            <div>
+                                <h1 class="text-main-white font-bold text-xl mb-3">PHONE</h1>
+                                <p class="text-main-white flex items-center"><i
+                                        class="fa-solid fa-phone text-main-yellow text-xl pr-3"></i> +20 10 335 794 42
+                                </p>
+                            </div>
+                            <div>
+                                <h1 class="text-main-white font-bold text-xl mb-3">EMAIL</h1>
+                                <p class="text-main-white flex items-center"><i
+                                        class="fa-solid fa-envelope text-main-yellow text-xl pr-3"></i> <a
+                                        href="mailto:oms51857@gmail.com">oms51857@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="space-y-5">
+                            <div>
+                                <h1 class="text-main-white font-bold text-xl mb-3">ADDRESS</h1>
+                                <p class="text-main-white"><i
+                                        class="fa-solid fa-location-dot text-main-yellow text-xl pr-3"></i> egypt tanta
+                                </p>
+                            </div>
+                            <div>
+                                <h1 class="text-main-white font-bold text-xl mb-3">FOLLOW US</h1>
+                                <div class="flex gap-x-5 items-center">
+                                    <p><a href="https://www.facebook.com/profile.php?id=100035709682448"
+                                            target="_blank"><i class="fa-brands fa-square-facebook text-main-yellow text-xl pr-3"></i></a>
+                                    </p>
+                                    <p><a href="https://github.com/ahmedhany5" target="_blank"><i
+                                                class="fa-brands fa-github text-main-yellow text-xl pr-3"></i></a></p>
+                                    <p><a href="https://www.linkedin.com/in/ahmed-hany-451913276/" target="_blank"><i
+                                                class="fa-brands fa-linkedin text-main-yellow text-xl pr-3"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10">
+                <div class="w-full h-1 bg-main-gray"></div>
+            </div>
+            <div class="flex flex-col gap-y-5 justify-between w-full md:flex-row pt-5 items-center">
+                <p class="text-main-white">Burger Template Kit By <span class="text-main-yellow hover:underline"><a
+                            href="">Ahmed Hany</a></span></p>
+                <p class="text-main-white">Copyright &copy; 2023. All rights reserved</p>
+            </div>
+        </section>
+        <a href="#home"
+            class="p-5 w-16 h-16 text-2xl bg-main-yellow rounded-full text-main-black flex items-center justify-center fixed bottom-5 right-5 hover:bottom-8 transition-all duration-150">
+            <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+</body>
+
+</html>
