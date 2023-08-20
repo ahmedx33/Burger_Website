@@ -1,7 +1,10 @@
 {
+  "homepage": "https://ahmedhany5.github.io/Burger_Website",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
